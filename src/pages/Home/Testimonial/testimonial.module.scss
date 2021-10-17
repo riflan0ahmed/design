@@ -1,5 +1,5 @@
 .container {
-  @apply flex flex-col justify-center mx-auto max-w-screen-lg mt-20 mb-5 w-5/6 lg:w-4/5;
+  @apply flex flex-col justify-center mx-auto max-w-screen-lg w-5/6 lg:w-4/5;
 
   .header {
     @apply flex flex-col justify-center;

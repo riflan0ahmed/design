@@ -2,7 +2,7 @@
   @apply flex flex-col;
 
   .header {
-    @apply flex flex-row mt-5 mb-10;
+    @apply flex flex-col sm:flex-row mt-5 mb-10;
 
     .name {
       @apply font-medium capitalize text-xl pr-1;

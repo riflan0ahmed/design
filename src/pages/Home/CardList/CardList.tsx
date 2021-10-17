@@ -24,7 +24,7 @@ const CardList = () => {
   ] as ICard[];
 
   return (
-    <div className="mt-20 mb-9 gap-5 max-w-screen-lg mx-auto grid grid-cols-1 w-5/6 sm:grid-cols-2 sm:w-4/5 md:grid-cols-2 md:w-5/6 lg:grid-cols-3 lg:w-4/5">
+    <div className="grid w-5/6 max-w-screen-lg grid-cols-1 gap-5 mx-auto my-28 sm:grid-cols-2 sm:w-4/5 md:grid-cols-2 md:w-5/6 lg:grid-cols-3 lg:w-4/5">
       {data.map((item) => (
         <Card key={item.id} data={item} />
       ))}
