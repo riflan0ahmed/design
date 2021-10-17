@@ -1,0 +1,31 @@
+.container {
+  @apply hidden lg:flex flex-row justify-between max-w-screen-lg mx-auto w-full py-5;
+
+  .left {
+    @apply flex justify-start my-auto;
+  }
+
+  .center {
+    @apply h-16 flex items-center;
+  }
+
+  .right {
+    @apply flex justify-end my-auto;
+  }
+
+  ul {
+    @apply flex flex-row gap-6;
+
+    li {
+      @apply my-auto;
+
+      .icon {
+        @apply text-gray-300 cursor-pointer;
+
+        &:hover {
+          @apply text-white;
+        }
+      }
+    }
+  }
+}

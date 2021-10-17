@@ -1,0 +1,33 @@
+.container {
+  @apply col-span-1 flex flex-col;
+
+  .image {
+    @apply h-64 bg-gray-500;
+  }
+
+  .content {
+    @apply flex flex-col p-5 border-2 border-gray-100;
+
+    .name {
+      @apply text-yellow-500 hover:text-white my-3 text-center text-xl;
+    }
+
+    .description {
+      @apply text-gray-600 hover:text-white py-3 text-sm text-center;
+    }
+  }
+
+  &:hover {
+    .content {
+      @apply bg-blue-600 border-blue-600;
+
+      .name {
+        @apply text-white;
+      }
+
+      .description {
+        @apply text-gray-200;
+      }
+    }
+  }
+}

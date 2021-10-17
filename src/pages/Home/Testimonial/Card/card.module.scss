@@ -1,0 +1,31 @@
+.container {
+  @apply flex flex-col;
+
+  .header {
+    @apply flex flex-row mt-5 mb-10;
+
+    .name {
+      @apply font-medium capitalize text-xl pr-1;
+    }
+
+    .role {
+      @apply text-sm my-auto;
+    }
+  }
+
+  .body {
+    @apply relative flex flex-col p-10 rounded-br-3xl;
+
+    .heading {
+      @apply my-5 text-white;
+    }
+
+    .description {
+      @apply text-gray-200 text-justify;
+    }
+
+    .circle {
+      @apply absolute -top-7 left-0 p-7 rounded-full z-10 bg-gray-200;
+    }
+  }
+}

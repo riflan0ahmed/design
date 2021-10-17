@@ -1,0 +1,23 @@
+.container {
+  @apply col-span-2 flex flex-col text-white;
+
+  .logo {
+    @apply h-14 text-4xl;
+  }
+
+  .content {
+    @apply text-sm text-gray-300 mt-6;
+  }
+
+  ul {
+    @apply flex flex-row gap-8 my-10;
+
+    li {
+      @apply transform rotate-45 p-2 bg-gray-700 hover:bg-blue-500 cursor-pointer;
+
+      .icon {
+        @apply transform -rotate-45;
+      }
+    }
+  }
+}

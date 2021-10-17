@@ -1,0 +1,23 @@
+.container {
+  @apply flex flex-col justify-center mx-auto max-w-screen-lg mt-20 mb-5 w-5/6 lg:w-4/5;
+
+  .header {
+    @apply flex flex-col justify-center;
+
+    .heading01 {
+      @apply text-yellow-500 font-medium text-4xl text-center;
+    }
+
+    .heading02 {
+      @apply text-blue-500 font-medium text-3xl text-center mt-2;
+    }
+
+    .line {
+      @apply w-12 flex border-b-4 border-yellow-500 mx-auto mt-2;
+    }
+  }
+
+  .body {
+    @apply mt-12 mb-4;
+  }
+}
