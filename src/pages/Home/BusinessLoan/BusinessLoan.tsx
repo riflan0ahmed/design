@@ -1,6 +1,6 @@
 const BusinessLoan = () => {
   return (
-    <div className="mt-24 bg-black">
+    <div className="mt-24 bg-black opacity-90">
       <div className="flex flex-col w-5/6 max-w-screen-lg py-20 mx-auto lg:w-4/5">
         <h1 className="mb-5 text-5xl font-normal text-center text-yellow-500 ">
           Ready to get started?
