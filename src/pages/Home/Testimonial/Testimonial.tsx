@@ -1,8 +1,7 @@
 import { ITestimonial } from "../../../interface/testimonial.interface";
-import Card from "./Card/Card";
-import useEmblaCarousel from "embla-carousel-react";
-import "../../../style/transistion.scss";
-import style from "./testimonial.module.scss";
+import Desktop from "./Desktop/Desktop";
+import Mobile from "./Mobile/Mobile";
+import classes from "./testimonial.module.scss";
 
 const Testimonial = () => {
   const data = [
@@ -44,29 +43,19 @@ const Testimonial = () => {
     },
   ] as ITestimonial[];
 
-  const [emblaRef] = useEmblaCarousel({
-    slidesToScroll: 2,
-    skipSnaps: false,
-  });
-
   return (
-    <div className={style.container}>
-      <div className={style.header}>
-        <h2 className={style.heading01}>Words From Customer</h2>
-        <h3 className={style.heading02}>Testimonial</h3>
-        <span className={style.line}></span>
+    <div className={classes.container}>
+      <div className={classes.header}>
+        <h2 className={classes.heading01}>Words From Customer</h2>
+        <h3 className={classes.heading02}>Testimonial</h3>
+        <span className={classes.line}></span>
       </div>
-      <div className={style.body}>
-        <div className="embla">
-          <div className="embla__viewport" ref={emblaRef}>
-            <div className="embla__container">
-              {data.map((item, index) => (
-                <div className="embla__slide" key={index}>
-                  <Card data={item} />
-                </div>
-              ))}
-            </div>
-          </div>
+      <div className={classes.body}>
+        <div className="hidden sm:block">
+          <Desktop data={data} />
+        </div>
+        <div className="sm:hidden">
+          <Mobile data={data} />
         </div>
       </div>
     </div>

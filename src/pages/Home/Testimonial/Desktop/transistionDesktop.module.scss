@@ -41,25 +41,3 @@
   overflow: hidden;
   height: 190px;
 }
-
-/* Mobile - 1 slide in viewport */
-// .embla__slide {
-//   flex: 0 0 100%;
-// }
-
-// /* Tablet - 2 slides in viewport */
-@media (min-width: 768px) {
-  //   .embla__slide {
-  //     flex: 0 0 50%;
-  //   }
-}
-
-/* Desktop - 3 slides in viewport */
-@media (min-width: 1024px) {
-  .embla__slide {
-    position: relative;
-    min-width: 50%;
-    padding-left: 25px;
-    flex: 0 0 50%;
-  }
-}
